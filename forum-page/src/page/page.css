@@ -1,0 +1,15 @@
+.page {
+    position: absolute;
+    top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.page>span {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.message {
+    margin-top: 10px;
+}

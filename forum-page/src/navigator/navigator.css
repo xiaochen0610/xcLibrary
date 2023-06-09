@@ -1,0 +1,30 @@
+.navigator {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    font-size: 16px;
+    line-height: 50px;
+    box-shadow: 0 1px 1px #ebe7e7;
+    background-color: white;
+}
+
+.navigator-left {
+    display: flex;
+    width: 315px;
+}
+
+img {
+    height: 45px;
+}
+
+button {
+    border: #ebe7e7;
+    background-color: #fff;
+}
+
+.navigator-right {
+    display: flex;
+    font-weight: 700;
+    justify-content: right;
+    color: #7ba77f;
+}
