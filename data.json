@@ -1,0 +1,215 @@
+{
+    "code": 100,
+    "result": {
+        "login_user": {
+            "pt_uid": "60301",
+            "is_admin": 0,
+            "role": {
+                "role_id": 1,
+                "role_name": "未加入群组",
+                "is_moderator": 0
+            },
+            "admin_info": {
+                "edit_thread": 0,
+                "del_thread": 0,
+                "del_reply": 0,
+                "del_comment": 0,
+                "edit_reply": 0,
+                "private": 0,
+                "digest": 0,
+                "lock": 0
+            },
+            "nick": "崩坏的关",
+            "sface": "http:\/\/a.img4399.com\/60301\/middle"
+        },
+        "thread": {
+            "tid": "213991",
+            "pid": 0,
+            "forums_id": "81954",
+            "subject": "投票长帖占个标题",
+            "summary": {
+                "str": ""
+            },
+            "lastpost": 1685430561,
+            "dateline": 1685430561,
+            "kind_id": "1120547",
+            "num_good": 0,
+            "num_view": 21,
+            "num_reply": 0,
+            "num_rreply": 0,
+            "stype": {
+                "__raw": "10000000000000000000000000000000",
+                "is_locked": 0,
+                "is_digest": 0,
+                "is_video": 0,
+                "is_new_video": 0,
+                "is_empty_subject": 0,
+                "is_rec_lock": 0,
+                "is_top": 0,
+                "is_kind_top": 0,
+                "is_total_top": 0,
+                "is_qa": 0,
+                "is_empty_content": 0,
+                "is_sm_examine": 0,
+                "is_video_examine": 0,
+                "is_recommend": 1
+            },
+            "user": {
+                "pt_uid": 3050917219,
+                "nick": "__阿尔托莉雅__",
+                "sface": "http:\/\/a.img4399.com\/3050917219\/middle",
+                "identity": 0,
+                "identity_bbs": {
+                    "__raw": 4160,
+                    "__bin": "1000001000000",
+                    "brain_trust": {
+                        "value": 1,
+                        "extend": {
+                            "icon": "https:\/\/fs.img4399.com\/ma\/742_201224092058_uemf.png?t=1608772858",
+                            "name": "智囊团"
+                        }
+                    },
+                    "moderator": {
+                        "official": {
+                            "value": 1,
+                            "extend": {
+                                "icon": "https:\/\/fs.img4399.com\/ma\/742_201223210011_Yn8x.png?t=1608728411",
+                                "name": "官方版主",
+                                "role_id": 50
+                            }
+                        },
+                        "internship": {
+                            "value": 0,
+                            "extend": {
+                                "icon": "http:\/\/f01.img4399.com\/mi\/742_221008181436_9doh.png",
+                                "name": "见习版主",
+                                "role_id": 30
+                            }
+                        },
+                        "deputy": {
+                            "value": 0,
+                            "extend": {
+                                "icon": "http:\/\/f03.img4399.com\/mi\/742_221008181508_NRku.png",
+                                "name": "玩家版主",
+                                "role_id": 35
+                            }
+                        },
+                        "user": {
+                            "value": 0,
+                            "extend": {
+                                "icon": "http:\/\/f04.img4399.com\/mi\/742_221008181454_GJhB.png",
+                                "name": "首席版主",
+                                "role_id": 40
+                            }
+                        }
+                    },
+                    "super_player": {
+                        "value": 0,
+                        "extend": {
+                            "icon": "http:\/\/s1.img4399.com\/f\/forums~81954\/sr-sp\/icon_default?t=1685548800",
+                            "name": "超级玩家"
+                        }
+                    },
+                    "developer": {
+                        "value": 0,
+                        "extend": {
+                            "icon": "https:\/\/fs.img4399.com\/ma\/742_201223204410_FNFv.png?t=1608727450",
+                            "name": "游戏开发者"
+                        }
+                    },
+                    "editor_user": {
+                        "value": 0,
+                        "extend": {
+                            "icon": "https:\/\/fs.img4399.com\/ma\/742_201224092027_iGsq.png?t=1608772827",
+                            "name": "官方小编"
+                        }
+                    }
+                },
+                "relation": 0,
+                "medal_show": {
+                    "honor": [
+                        {
+                            "type": 6,
+                            "level": 1,
+                            "icon": "http:\/\/f1.img4399.com\/ma\/1002_211110152904_fCc1.png",
+                            "name": "智囊团达人",
+                            "status": 1,
+                            "color": "#F86E57"
+                        }
+                    ]
+                },
+                "role": {
+                    "role_id": 200,
+                    "role_name": "网站管理员",
+                    "is_moderator": 1
+                }
+            },
+            "device": "pc",
+            "privatize": 0,
+            "is_praise": 0,
+            "old_thread_status": 0,
+            "tips": {
+                "sm_examine": "",
+                "video_examine": ""
+            },
+            "accept_answer": {},
+            "ip_local": "福建",
+            "message": "【更多游戏相关信息请关注植物大战僵尸 HD版小组】\n<p>\n\t来个二次元番剧投票哈哈哈哈\n<\/p>\n<p>\n\t[vote,1542138676]奥对对对对对\n<\/p>\n<p>\n\t<img onclick=\"rawImg(1542140260,this);\" src=\"http:\/\/p.img4399.com\/1542140260\/7\" big-src=\"http:\/\/p.img4399.com\/1542140260\"  border=\"0\" \/>\n<\/p>",
+            "videos": {},
+            "num_author_reply": 0
+        },
+        "reply": [],
+        "top_like_reply": [],
+        "click_user": [],
+        "position_reply": null,
+        "config": {
+            "show_image": true,
+            "show_quan": 1,
+            "quan_info": {
+                "id": "16042",
+                "icon": "http:\/\/mobi.4399tech.com\/redirect\/t1sj\/img\/test_mi\/mi~589_230213175459_nKux.jpg?1676282099",
+                "title": "植物大战僵尸 HD版",
+                "forums_id": "81954",
+                "game_id": "100907",
+                "num_user_subscribe": 9891,
+                "game": {},
+                "is_subscribe": 0,
+                "num_thread_total": 1777,
+                "num_official_thread_total": 0,
+                "num_reply_yesterday": 23,
+                "rec_reason": "",
+                "tags": [],
+                "extend": []
+            },
+            "is_subscribe": 0,
+            "tid": "213991",
+            "only_host": 0,
+            "order": "hot",
+            "pid": 0,
+            "cid": 0,
+            "page": 1,
+            "totalpage": 1,
+            "click": 0,
+            "share": {
+                "data": {
+                    "title": "投票长帖占个标题",
+                    "description": "来个二次元番剧投票哈哈哈哈[vote,1542138676]奥对对对对对",
+                    "imageUrl": "http:\/\/f1.img4399.com\/p~1542140260~s3",
+                    "url": "http:\/\/ykd.t2.bbs.4399.cn\/m\/thread-tid-213991?forums_id=81954&quan_id=16042&ct=tz-213991"
+                },
+                "platforms": [
+                    "qq",
+                    "qzone",
+                    "wechatSession",
+                    "wechatTimeline",
+                    "weibo",
+                    "link"
+                ]
+            },
+            "need_answer": 1,
+            "accept_pid": 0,
+            "game_entrance": []
+        }
+    },
+    "message": ""
+}
