@@ -2,19 +2,30 @@
     display: flex;
     position: fixed;
     top: 0px;
-    font-size: 16px;
-    line-height: 50px;
-    box-shadow: 0 1px 1px #ebe7e7;
+    left: 0;
+    right: 0;
+    font-size: 17px;
+    height: 50px;
+    border-bottom: 1px solid #ebe7e7;
     background-color: white;
 }
 
 .navigator-left {
     display: flex;
-    width: 315px;
+
+    line-height: 50px;
+}
+
+.navigator-left>div {
+    width: auto;
+    min-width: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 img {
-    height: 45px;
+    height: 50px;
 }
 
 button {
@@ -25,6 +36,11 @@ button {
 .navigator-right {
     display: flex;
     font-weight: 700;
-    justify-content: right;
     color: #7ba77f;
+    margin-left: auto;
+    line-height: 50px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

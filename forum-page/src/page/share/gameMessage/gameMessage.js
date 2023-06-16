@@ -20,13 +20,10 @@ export default function GameMessage({ icon, title }) {
                         <span>昨日更新</span>
                     </div>
                 </div>
-
-
             </div>
             <div className="gameMessage-right">
                 <input type="submit" value="加入"></input>
             </div>
-
         </div>
     )
 }

@@ -1,0 +1,14 @@
+.commend {
+    flex: auto;
+    order: 20;
+}
+
+.commend-title {
+    font-size: 18px;
+    border-top: 5px solid #f5f5f5;
+    border-bottom: .5px solid #f5f5f5;
+}
+
+.commend-title>div {
+    margin: 15px 15px 15px 15px;
+}

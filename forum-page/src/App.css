@@ -1,5 +1,14 @@
 .app {
     display: flex;
     flex: initial;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    /* height: 100%; */
+}
+
+.app-page {
+    margin: 75px 0;
+    overflow: auto
 }

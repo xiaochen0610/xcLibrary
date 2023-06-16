@@ -4,9 +4,16 @@ import "./skeleton.css"
 export default function Skeleton() {
     return (
         <div className="skeleton">
-            <div></div>
-            <div></div>
-            <div className="half"></div>
+            <div className="skeleton-message">
+                <div></div>
+                <div></div>
+                <div className="half"></div>
+            </div>
+            <div className="skeleton-message">
+                <div></div>
+                <div></div>
+                <div className="half"></div>
+            </div>
         </div>
     )
 }

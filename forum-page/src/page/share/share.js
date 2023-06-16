@@ -25,8 +25,6 @@ export default function Share({ goodNumber, icon, title }) {
             <GameMessage
                 icon={icon}
                 title={title} />
-            <div className="bar"></div>
-
         </div>
     )
 }

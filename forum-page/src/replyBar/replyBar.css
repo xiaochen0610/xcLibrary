@@ -1,22 +1,17 @@
 .replyBar {
     display: flex;
     position: fixed;
-
+    flex-direction: row;
     bottom: 0px;
+    left: 0;
+    right: 0;
     font-size: 16px;
-    height: 60px;
-    width: 414px;
     border-top: .5px solid #afafaf;
     background-color: white;
 
 }
 
 
-.input,
-.replyBar-message,
-.replyBar-like {
-    display: inline-block;
-}
 
 .input>input {
     width: 250px;
@@ -26,6 +21,12 @@
     border-radius: 20px;
     margin: 10px;
     margin-left: 20px;
+}
+
+.replyBar-right {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
 }
 
 .img {

@@ -10,9 +10,6 @@ import Page from './page/page';
 import ReplyBar from './replyBar/replyBar';
 import Commend from './commend/commend';
 
-
-
-
 export default function App() {
   const [title, setTitle] = useState("帖子");
   const [sface, setSface] = useState(null);
@@ -23,8 +20,6 @@ export default function App() {
   const [message, setMessage] = useState(null);
   const [goodNumber, setGoodNumber] = useState(null);
   const [icon, setIcon] = useState(null);
-
-
 
   request
     .then((data) => {
@@ -46,23 +41,23 @@ export default function App() {
   return (
     <div className="app">
       <Navigator title={title} />
-
-      <User
-        sface={sface}
-        nick={nick}
-        num_view={num_view}
-        dateline={dateline} />
-      <Page
-        subject={subject}
-        message={message}
-        goodNumber={goodNumber}
-        icon={icon}
-        title={title}
-      />
-      <Commend />
-
+      <div className='app-page'>
+        <User
+          sface={sface}
+          nick={nick}
+          num_view={num_view}
+          dateline={dateline} />
+        <Page
+          subject={subject}
+          message={message}
+          goodNumber={goodNumber}
+          icon={icon}
+          title={title}
+        />
+        <Commend />
+      </div>
       <ReplyBar />
-    </div>
+    </div >
   );
 };
 
