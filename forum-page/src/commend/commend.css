@@ -6,9 +6,63 @@
 .commend-title {
     font-size: 18px;
     border-top: 5px solid #f5f5f5;
-    border-bottom: .5px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
 }
 
 .commend-title>div {
     margin: 15px 15px 15px 15px;
+}
+
+.commend-content0 {
+    padding: 15px 12px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.commend-content-title {
+    display: flex;
+    height: 25px;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.commend-content-title>.commend-img {
+    height: 18px;
+    width: 18px;
+    flex-shrink: 0;
+    margin: 3px;
+    background: linear-gradient(to right, #ffa500, #fff200);
+    border-radius: 3px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 18px;
+    color: white;
+}
+
+.commend-content-title-content {
+    text-overflow: ellipsis;
+}
+
+.commend-content {
+    height: 80px;
+    display: flex;
+
+    color: #afafaf;
+
+}
+
+.str {
+    height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 12px;
+}
+
+.commend-content>img {
+    padding-right: auto;
+    width: 300px;
+    height: 70px;
+    padding: 10px;
 }

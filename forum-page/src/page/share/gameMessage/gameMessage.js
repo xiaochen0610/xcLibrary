@@ -2,7 +2,7 @@ import React from "react";
 import './gameMessage.css'
 
 
-export default function GameMessage({ icon, title }) {
+export default function GameMessage({ icon, title, num_user_subscribe, num_reply_yesterday }) {
     return (
         <div className="gameMessage">
             <img src={icon} alt=""></img>
@@ -12,11 +12,11 @@ export default function GameMessage({ icon, title }) {
                 </div>
                 <div className="gameMessage-left2">
                     <div>
-                        <span className="num">{ }no</span>
+                        <span className="num">{num_user_subscribe}</span>
                         <span>成员</span>
                     </div>
                     <div>
-                        <span className="num">{ }no</span>
+                        <span className="num">{num_reply_yesterday}</span>
                         <span>昨日更新</span>
                     </div>
                 </div>

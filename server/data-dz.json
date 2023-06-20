@@ -1,0 +1,293 @@
+{
+    "code": 100,
+    "result": {
+        "data": [
+            {
+                "tid": "39655843",
+                "passthrough": "3f7880bcc9b047a7beaa6be3fef7543d",
+                "thread": {
+                    "tid": "39655843",
+                    "pid": "296835077",
+                    "forums_id": "128559",
+                    "subject": "【蛋仔爆料】水波蛋联动返场最终弹开启！居然还带了一位新朋友?",
+                    "summary": {
+                        "str": "后面声音有点大，建议前面音量调大点，后面音量调小点两小只八折总价：64+64=128RMB两小只都拥有了可领取我们都水波蛋专属头像框哦！水波蛋也太可爱了叭！简直一整个期待住了晴天与彩虹，为我们生活带来了温暖！这也是水波蛋最后一次返厂啦！如果...",
+                        "images": [],
+                        "video": {
+                            "url": "http:\/\/v.3304399.net\/forums\/media\/1624681\/c16b814dff1111ed97a9c81f66c895c6\/2205361054.mp4",
+                            "pic": "http:\/\/f1.img4399.com\/youpai~upload\/forums\/2023\/05\/31\/01_KsCqgg.1080x1440.jpg",
+                            "duration": 129,
+                            "video_status": 0,
+                            "review_status": 0,
+                            "is_uuid_video": 0,
+                            "counter": 14794
+                        }
+                    },
+                    "lastpost": 1685803704,
+                    "dateline": 1685470566,
+                    "kind_id": "214600",
+                    "num_good": 30,
+                    "num_view": 3030,
+                    "num_reply": 20,
+                    "num_rreply": 8,
+                    "stype": {
+                        "__raw": "1000000000000000000",
+                        "is_locked": 0,
+                        "is_digest": 0,
+                        "is_video": 0,
+                        "is_new_video": 1,
+                        "is_empty_subject": 0,
+                        "is_rec_lock": 0,
+                        "is_top": 0,
+                        "is_kind_top": 0,
+                        "is_total_top": 0,
+                        "is_qa": 0,
+                        "is_empty_content": 0,
+                        "is_sm_examine": 0,
+                        "is_video_examine": 0,
+                        "is_recommend": 1
+                    },
+                    "user": {
+                        "pt_uid": 705331621,
+                        "nick": "705331621",
+                        "sface": "http:\/\/a.img4399.com\/705331621\/middle",
+                        "identity": 0,
+                        "identity_bbs": [],
+                        "relation": 0,
+                        "medal_show": [],
+                        "role": {
+                            "role_id": 1,
+                            "role_name": "未加入群组",
+                            "is_moderator": 0
+                        }
+                    },
+                    "device": "app",
+                    "privatize": 0,
+                    "is_praise": 0,
+                    "old_thread_status": 0,
+                    "tips": {
+                        "sm_examine": "",
+                        "video_examine": ""
+                    },
+                    "accept_answer": {
+                        "pt_uid": 3680538861,
+                        "nick": "3680538861",
+                        "sface": "http:\/\/a.img4399.com\/3680538861\/middle",
+                        "identity": 0,
+                        "identity_bbs": [],
+                        "relation": 0,
+                        "medal_show": [],
+                        "content": "希望姐姐以后穿彩虹水波蛋",
+                        "type": "2",
+                        "like": 3,
+                        "pid": "296835245"
+                    },
+                    "ip_local": "",
+                    "quan_info": {
+                        "id": "123141",
+                        "icon": "http:\/\/f1.img4399.com\/mi~1034_230529113123_Yv69.jpeg?1685331085",
+                        "title": "蛋仔派对",
+                        "forums_id": "128559",
+                        "game_id": "171722",
+                        "num_user_subscribe": 0,
+                        "game": [],
+                        "is_subscribe": 0,
+                        "num_thread_total": 0,
+                        "num_official_thread_total": 0,
+                        "num_reply_yesterday": 0,
+                        "rec_reason": "闯关派对，开黑必备",
+                        "tags": [],
+                        "extend": []
+                    }
+                },
+                "game_entrance": []
+            },
+            {
+                "tid": "39816069",
+                "passthrough": "{\"versionv\":\"6d1ac19f7ce9414b89d50230aebc2010\",\"datatrace\":4313,\"game_id\":171942}",
+                "thread": {
+                    "tid": "39816069",
+                    "pid": "297370491",
+                    "forums_id": "128698",
+                    "subject": "又来一款塔科夫？《超凡先锋》能不能卷下去？",
+                    "summary": {
+                        "str": "点赞评论加关注，爱我你就别跑路！",
+                        "images": [],
+                        "video": {
+                            "url": "http:\/\/v.3304399.net\/forums\/media\/1636466\/ab12e50b084011ee97a9c81f66c895c6\/1359524752.mp4",
+                            "pic": "http:\/\/f1.img4399.com\/youpai~upload\/forums\/2023\/06\/11\/18_8pbYkz.4000x2250.jpg",
+                            "duration": 180,
+                            "video_status": 0,
+                            "review_status": 0,
+                            "is_uuid_video": 0,
+                            "counter": 1702
+                        }
+                    },
+                    "lastpost": 1686544601,
+                    "dateline": 1686478925,
+                    "kind_id": "203756",
+                    "num_good": 9,
+                    "num_view": 629,
+                    "num_reply": 8,
+                    "num_rreply": 4,
+                    "stype": {
+                        "__raw": "1000000000010000000",
+                        "is_locked": 0,
+                        "is_digest": 1,
+                        "is_video": 0,
+                        "is_new_video": 1,
+                        "is_empty_subject": 0,
+                        "is_rec_lock": 0,
+                        "is_top": 0,
+                        "is_kind_top": 0,
+                        "is_total_top": 0,
+                        "is_qa": 0,
+                        "is_empty_content": 0,
+                        "is_sm_examine": 0,
+                        "is_video_examine": 0,
+                        "is_recommend": 1
+                    },
+                    "user": {
+                        "pt_uid": 3862899690,
+                        "nick": "3862899690",
+                        "sface": "http:\/\/a.img4399.com\/3862899690\/middle",
+                        "identity": 0,
+                        "identity_bbs": [],
+                        "relation": 0,
+                        "medal_show": [],
+                        "role": {
+                            "role_id": 1,
+                            "role_name": "未加入群组",
+                            "is_moderator": 0
+                        }
+                    },
+                    "device": "app",
+                    "privatize": 0,
+                    "is_praise": 0,
+                    "old_thread_status": 0,
+                    "tips": {
+                        "sm_examine": "",
+                        "video_examine": ""
+                    },
+                    "accept_answer": [],
+                    "ip_local": "",
+                    "quan_info": {
+                        "id": "123279",
+                        "icon": "http:\/\/f1.img4399.com\/mi~1034_230608172806_1SZ8.jpeg?1686216507",
+                        "title": "超凡先锋",
+                        "forums_id": "128698",
+                        "game_id": "171942",
+                        "num_user_subscribe": 0,
+                        "game": [],
+                        "is_subscribe": 0,
+                        "num_thread_total": 0,
+                        "num_official_thread_total": 0,
+                        "num_reply_yesterday": 0,
+                        "rec_reason": "新世代的生存夺金手游",
+                        "tags": [],
+                        "extend": []
+                    }
+                },
+                "game_entrance": {
+                    "id": "171942",
+                    "cnname": "超凡先锋",
+                    "enname": "",
+                    "brief": "网易爆款新世代生存夺金手游！",
+                    "group_id": 123279,
+                    "passthrough": "{\"versionv\":\"6d1ac19f7ce9414b89d50230aebc2010\",\"datatrace\":4313,\"game_id\":171942}",
+                    "icopath": "https:\/\/fs.img4399.com\/mi~171942~120x120?1686017825",
+                    "jump": "gamehotspot:\/\/tool\/appStore?itunesId=1546962480"
+                }
+            },
+            {
+                "tid": "39736668",
+                "passthrough": "3f7880bcc9b047a7beaa6be3fef7543d",
+                "thread": {
+                    "tid": "39736668",
+                    "pid": "297100661",
+                    "forums_id": "128559",
+                    "subject": "【蛋仔派对】蛋仔派对一周年快乐，你还记得和它相遇是何时吗？",
+                    "summary": {
+                        "str": "[游戏]蛋仔派对一周年啦！来回顾一下这一年来我们走过的赛季吧！",
+                        "images": [],
+                        "video": {
+                            "url": "http:\/\/v.3304399.net\/forums\/media\/1630450\/32b0a6b503a611ee98781866da4d1cd2\/499022798.mp4",
+                            "pic": "http:\/\/f1.img4399.com\/youpai~upload\/16304502023\/06\/05\/21_KSFdDL.1024x576.jpg",
+                            "duration": 136,
+                            "video_status": 0,
+                            "review_status": 0,
+                            "is_uuid_video": 0,
+                            "counter": 642
+                        }
+                    },
+                    "lastpost": 1686439459,
+                    "dateline": 1685972736,
+                    "kind_id": "214600",
+                    "num_good": 19,
+                    "num_view": 955,
+                    "num_reply": 2,
+                    "num_rreply": 2,
+                    "stype": {
+                        "__raw": "1000000000000000000",
+                        "is_locked": 0,
+                        "is_digest": 0,
+                        "is_video": 0,
+                        "is_new_video": 1,
+                        "is_empty_subject": 0,
+                        "is_rec_lock": 0,
+                        "is_top": 0,
+                        "is_kind_top": 0,
+                        "is_total_top": 0,
+                        "is_qa": 0,
+                        "is_empty_content": 0,
+                        "is_sm_examine": 0,
+                        "is_video_examine": 0,
+                        "is_recommend": 1
+                    },
+                    "user": {
+                        "pt_uid": 705331621,
+                        "nick": "705331621",
+                        "sface": "http:\/\/a.img4399.com\/705331621\/middle",
+                        "identity": 0,
+                        "identity_bbs": [],
+                        "relation": 0,
+                        "medal_show": [],
+                        "role": {
+                            "role_id": 1,
+                            "role_name": "未加入群组",
+                            "is_moderator": 0
+                        }
+                    },
+                    "device": "pc",
+                    "privatize": 0,
+                    "is_praise": 0,
+                    "old_thread_status": 0,
+                    "tips": {
+                        "sm_examine": "",
+                        "video_examine": ""
+                    },
+                    "accept_answer": [],
+                    "ip_local": "",
+                    "quan_info": {
+                        "id": "123141",
+                        "icon": "http:\/\/f1.img4399.com\/mi~1034_230529113123_Yv69.jpeg?1685331085",
+                        "title": "蛋仔派对",
+                        "forums_id": "128559",
+                        "game_id": "171722",
+                        "num_user_subscribe": 0,
+                        "game": [],
+                        "is_subscribe": 0,
+                        "num_thread_total": 0,
+                        "num_official_thread_total": 0,
+                        "num_reply_yesterday": 0,
+                        "rec_reason": "闯关派对，开黑必备",
+                        "tags": [],
+                        "extend": []
+                    }
+                },
+                "game_entrance": []
+            }
+        ]
+    },
+    "message": ""
+}
