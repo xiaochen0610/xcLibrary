@@ -57,8 +57,12 @@
 }
 
 .str {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
     height: 45px;
-    white-space: normal;
+    width: 100%;
+    -webkit-line-clamp: 2;
+    /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;
     padding-top: 12px;
