@@ -10,20 +10,17 @@
 }
 
 .commend-title>div {
-    margin: 15px 15px 15px 15px;
+    margin: 15px 20px 15px 20px;
 }
 
 .commend-content0 {
-    padding: 15px 12px;
+    padding: 15px 18px;
     border-bottom: 1px solid #f5f5f5;
 }
 
 .commend-content-title {
     display: flex;
     height: 25px;
-    overflow: hidden;
-    /* white-space: nowrap; */
-    text-overflow: ellipsis;
     font-size: 18px;
     font-weight: bolder;
 }
@@ -42,7 +39,13 @@
 }
 
 .commend-content-title-content {
+
+    height: 25px;
+    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: bolder;
 }
 
 .commend-content {
@@ -55,6 +58,7 @@
 
 .str {
     height: 45px;
+    white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
     padding-top: 12px;
@@ -65,4 +69,8 @@
     width: 300px;
     height: 70px;
     padding: 10px;
+}
+
+.commend-content-view {
+    padding-top: 7px;
 }

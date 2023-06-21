@@ -8,7 +8,7 @@ const Navigator = ({ title }) => {
             <div className="navigator-left">
 
                 <img src={"/image/back.png"} alt='' />
-                <div>{title}</div>
+                <div className="navigator-left-title">{title}</div>
             </div>
             <div className="navigator-right">
                 <span>进论坛</span>

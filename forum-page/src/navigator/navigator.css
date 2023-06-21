@@ -15,7 +15,7 @@
     line-height: 50px;
 }
 
-.navigator-left>div {
+.navigator-left-title {
     min-width: 25px;
     overflow: hidden;
     white-space: nowrap;
