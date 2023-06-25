@@ -3,8 +3,8 @@ import ReactHtmlParser from "react-html-parser";
 import { useState } from 'react';
 import moment from 'moment';
 import './App.css';
-import request from './request'
-import requestCommend from './request-commend';
+import request from '../request'
+import requestCommend from '../request-commend';
 import Navigator from './navigator/navigator';
 import User from './user/user';
 import Page from './page/page';
