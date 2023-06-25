@@ -39,7 +39,6 @@
 }
 
 .commend-content-title-content {
-
     height: 25px;
     overflow: hidden;
     white-space: nowrap;
@@ -51,9 +50,7 @@
 .commend-content {
     height: 80px;
     display: flex;
-
     color: #afafaf;
-
 }
 
 .str {
@@ -62,7 +59,6 @@
     height: 45px;
     width: 100%;
     -webkit-line-clamp: 2;
-    /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;
     padding-top: 12px;
