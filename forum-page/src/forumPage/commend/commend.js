@@ -14,21 +14,6 @@ export default function Commend({ subject1, str1, pic1, num_view1, subject2, str
                 str={str1}
                 pic={pic1}
                 num_view={num_view1} />
-            <CommendContent
-                subject={subject2}
-                str={str2}
-                pic={pic2}
-                num_view={num_view2} />
-            <CommendContent
-                subject={subject3}
-                str={str3}
-                pic={pic3}
-                num_view={num_view3} />
-
-
-
-
-
         </div>
     } else {
         return <div className="commend">

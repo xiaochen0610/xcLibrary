@@ -2,7 +2,7 @@ import React from 'react';
 import ReactHtmlParser from "react-html-parser";
 import { useState } from 'react';
 import moment from 'moment';
-import './App.css';
+import './forumPage.css';
 import request from './request'
 import requestCommend from './request-commend';
 import Navigator from './navigator/navigator';
@@ -11,7 +11,7 @@ import Page from './page/page';
 import ReplyBar from './replyBar/replyBar';
 import Commend from './commend/commend';
 
-export default function App() {
+export default function forumPage() {
   const [title, setTitle] = useState("帖子");
   const [sface, setSface] = useState(null);
   const [nick, setNick] = useState("");

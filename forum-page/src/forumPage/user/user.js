@@ -1,20 +1,20 @@
 import React from "react";
 import "./user.css";
-// import { Router } from "express";
-// import { Link } from "react-router-dom";
-
-
+import { Link } from "react-router-dom";
 
 export default function User({ sface, nick, num_view, dateline }) {
     return (
         <div className="user">
-
-            <img src={sface} alt="头像"></img>
+            <Link className="user-img" to='/userCard'  >
+                <img src={sface} alt="头像"></img>
+            </Link>
             <div className="user0">
                 <div className="user1">
-                    <span className="nick">
-                        {nick}
-                    </span>
+                    <Link to='/userCard'  >
+                        <span className="nick">
+                            {nick}
+                        </span>
+                    </Link>
                     <span className="identity">
                         楼主
                     </span>
@@ -31,6 +31,6 @@ export default function User({ sface, nick, num_view, dateline }) {
                 <input type="submit" value="关注"></input>
 
             </div>
-        </div>
+        </div >
     )
 };
