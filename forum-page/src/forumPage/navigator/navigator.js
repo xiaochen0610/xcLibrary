@@ -12,7 +12,7 @@ const Navigator = ({ title }) => {
             </div>
             <div className="navigator-right">
                 <span>进论坛</span>
-                <img src={'/image/share.png'} alt='' />
+                <img src={'/image/more.png'} alt='' />
             </div>
         </div>
     )

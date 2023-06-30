@@ -1,12 +1,14 @@
 import React from "react";
 import './userMessage.css'
 
-export default function UserMessage() {
+export default function UserMessage({ sface, nick, area, follow_num, fans_num, group_num, praise_num, digest_thread_num }) {
     return (
-        <div className="userMessage">
-            <div className="userMessage-area-sface-botton">
+        <div className="userMessage"
+            style={{ backgroundImage: `url(${sface})` }}
+        >
+            <div className="userMessage-area-sface-botton" >
                 <div className="userMessage-area-sface">
-                    ?
+                    <img src={sface} alt=''></img>
                 </div>
                 <div className="userMessage-area-botton">
                     关注
@@ -14,24 +16,24 @@ export default function UserMessage() {
             </div>
             <div className="userMessage-area">
                 <div className="userMessage-area-userName">
-                    名字?
+                    {nick}
                 </div>
                 <div className="userMessage-area-area">
-                    IP属地:?
+                    IP属地:{area}
                 </div>
                 <div className="userMessage-area-attention">
                     <span className="num">
-                        ?
+                        {follow_num}
                     </span>
                     关注
                     <span>|</span>
                     <span className="num">
-                        ?
+                        {fans_num}
                     </span>
                     粉丝
                     <span>|</span>
                     <span className="num">
-                        ?
+                        {group_num}
                     </span>
                     论坛
                 </div>
@@ -41,10 +43,10 @@ export default function UserMessage() {
                     </div>
                     <div className="userMessage-area-honor-2">
                         被赞
-                        <span>?</span>
+                        <span>{praise_num}</span>
                         <span className="point">·</span>
-                        被赞
-                        <span>?</span>
+                        精华帖
+                        <span>{digest_thread_num}</span>
                     </div>
                 </div>
             </div>

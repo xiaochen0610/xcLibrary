@@ -1,0 +1,25 @@
+{
+    "code": 100,
+    "result": {
+        "uid": "4014533101",
+        "nick": "niconiconi！厂长！哈",
+        "identity": 0,
+        "face_time": "1685019976",
+        "sface": "http:\/\/a.img4399.com\/4014533101\/middle?1685019976",
+        "bface": "http:\/\/a.img4399.com\/4014533101\/big?1685019976",
+        "area": "福建",
+        "follow_num": "1",
+        "fans_num": "2",
+        "digest_thread_num": 3,
+        "answer_thread_num": 38,
+        "post_thread_num": 41,
+        "reply_thread_num": 116,
+        "praise_thread_num": 6,
+        "praise_num": 18,
+        "thread_praised_num": 18,
+        "group_num": 2,
+        "relation": 0,
+        "isBlacklist": 0
+    },
+    "message": ""
+}

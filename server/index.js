@@ -2,6 +2,8 @@ const express = require('express');
 const fs = require('fs')
 const PORT = process.env.PORT || 3001;
 const PORT1 = process.env.PORT || 3002;
+const PORT2 = process.env.PORT || 3003;
+
 
 
 const app = express();
@@ -30,4 +32,17 @@ const dataCommend = fs.readFileSync('././data-commend.json');
 
 commend.get("/", (req, res) => {
     res.jsonp(JSON.parse(dataCommend));
+});
+
+
+const userCard = express();
+
+userCard.listen(PORT2, () => {
+    console.log(`server listening on ${PORT2}`)
+});
+
+const dataUserCard = fs.readFileSync('././data-userCard.json');
+
+userCard.get("/", (req, res) => {
+    res.jsonp(JSON.parse(dataUserCard));
 });

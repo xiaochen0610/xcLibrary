@@ -22,8 +22,14 @@
     text-overflow: ellipsis;
 }
 
-img {
-    height: 50px;
+.navigator-left>img {
+    height: 24px;
+    margin: 13px;
+}
+
+.navigator-right>img {
+    height: 36px;
+    margin: 7px;
 }
 
 button {
