@@ -10,17 +10,14 @@
     z-index: 10;
 }
 
-.userCardNavigator-left {
-    display: flex;
-    line-height: 50px;
-}
+
 
 .userCardNavigator-right {
     display: flex;
     margin-left: auto;
 }
 
-.userCardNavigator-left>img {
+.userCardNavigator-left-img>img {
     height: 24px;
     margin: 13px;
 }

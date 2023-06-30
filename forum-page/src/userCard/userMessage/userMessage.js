@@ -1,11 +1,11 @@
 import React from "react";
 import './userMessage.css'
 
-export default function UserMessage({ sface, nick, area, follow_num, fans_num, group_num, praise_num, digest_thread_num }) {
+export default function UserMessage({ bface, sface, nick, area, follow_num, fans_num, group_num, praise_num, digest_thread_num }) {
+
     return (
         <div className="userMessage"
-            style={{ backgroundImage: `url(${sface})` }}
-        >
+            style={{ backgroundImage: `url(${bface})` }}>
             <div className="userMessage-area-sface-botton" >
                 <div className="userMessage-area-sface">
                     <img src={sface} alt=''></img>
