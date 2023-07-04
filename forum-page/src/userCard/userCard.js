@@ -1,9 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import "./userCard.css"
+import "./userCard.css";
+
+import requestUsercard from "./requestUserCard";
+import requestUsercardPost from "./requestUserCardPost";
+
 import UserMessage from "./userMessage/userMessage";
 import UserCardNavigator from "./userCardNavigator/userCardNavigator";
-import requestUsercard from "./requestUserCard";
 import UserCardPost from "./userCardPost/userCardPost";
 
 export default function userCard() {
@@ -16,6 +19,14 @@ export default function userCard() {
     const [praise_num, setPraise_num] = useState("");
     const [digest_thread_num, setDigest_thread_num] = useState("");
     const [bface, setBface] = useState("");
+    const [subject, setSubject] = useState("");
+    const [str, setStr] = useState("");
+    const [images, setImages] = useState("");
+    const [num_good, setNum_good] = useState("");
+    const [num_view, setNum_view] = useState("");
+    const [title, setTitle] = useState("");
+    const [num_reply, setNum_reply] = useState("");
+
 
     requestUsercard
         .then((data) => {
@@ -32,6 +43,19 @@ export default function userCard() {
         .catch((err) => {
             console.log(err);
         })
+
+    requestUsercardPost.then((data) => {
+        setSubject(data[0].subject)
+        setStr(data[0].summary.str)
+        setImages(data[0].summary.images)
+        setNum_good(data[0].num_good)
+        setNum_view(data[0].num_view)
+        setTitle(data[0].quan_info.title)
+        setNum_reply(data[0].num_reply)
+
+    }).catch((err) => {
+        console.log(err);
+    })
 
 
 
@@ -51,7 +75,18 @@ export default function userCard() {
                     digest_thread_num={digest_thread_num}
                 />
                 <UserCardPost
-                    nick={nick} />
+                    nick={nick}
+                    subject={subject}
+                    str={str}
+                    images={images}
+                    num_good={num_good}
+                    num_view={num_view}
+                    title={title}
+                    num_reply={num_reply}
+
+
+
+                />
             </div>
 
         </div>

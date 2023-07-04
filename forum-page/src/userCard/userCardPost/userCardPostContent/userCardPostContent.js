@@ -1,7 +1,7 @@
 import React from "react";
 import "./userCardPostContent.css"
 
-export default function UserCardPostContent({ nick }) {
+export default function UserCardPostContent({ nick, subject, str, images, num_good, num_view, title, num_reply }) {
     return (
 
         <div className="userCardPost1">
@@ -13,37 +13,36 @@ export default function UserCardPostContent({ nick }) {
                     </div>
                     <div className="postAbout">
                         <span>昨天{ }</span>
-                        <span>{ }浏览</span>
+                        <span>{num_view}浏览</span>
                     </div>
                 </div>
             </div>
             <div className="userCardPostUserContent1">
                 <div className="userCardPostUserContentTitle1">
-                    标题
+                    {subject}
                 </div>
                 <div className="userCardPostUserContentSummary1">
-                    总呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜我呜呜呜呜呜呜呜呜呜呜呜呜总呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜我呜呜呜呜呜呜呜呜呜呜呜呜总呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜我呜呜呜呜呜呜呜呜呜呜呜呜
+                    {str}
                 </div>
-                <img className="userCardPostUserContentImg1" src={'/image/penguin.gif'} alt=''></img>
+                <img className="userCardPostUserContentImg1" src={images} alt=''></img>
 
                 <div className="game1">
                     <img className="gameImg1" src={"/image/penguin.gif"} alt='' />
                     <div className="gameTitle1">
-                        游戏名
-                        { }
+                        {title}
                     </div>
                     <img className="gameMore" src={"/image/back.png"} alt='' />
                 </div>
             </div>
-            <div className="userCardPostMessage1">
+            <div className="userCardPostMessage1">                <div>
+                <img src={"/image/message.png"} alt='' />
+                {num_reply}
+            </div>
                 <div>
                     <img src={"/image/good.png"} alt='' />
-                    111{ }
+                    {num_good}
                 </div>
-                <div>
-                    <img src={"/image/message.png"} alt='' />
-                    111{ }
-                </div>
+
             </div>
         </div>
 
