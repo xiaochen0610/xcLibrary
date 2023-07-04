@@ -75,12 +75,14 @@
 .userCardPostMessage1 {
     display: flex;
     justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: #fafafa 3px solid;
 }
 
 .userCardPostMessage1>div {
     color: #bbbbbb;
     font-size: 15px;
-    /* line-height: 25px; */
 }
 
 .userCardPostMessage1>div>img {

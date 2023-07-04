@@ -19,11 +19,11 @@ const userCardNavigator = () => {
         <div className="userCardNavigator">
             <div className="userCardNavigator-left">
                 <Link className='userCardNavigator-left-img' to='/'>
-                    <img src={"/image/back.png"} alt='' />
+                    <img src={"/image/back-white.png"} alt='' />
                 </Link>
             </div>
             <div className="userCardNavigator-right">
-                <img src={'/image/more.png'} alt='' />
+                <img src={'/image/more-white.png'} alt='' />
             </div>
         </div>
     )
