@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./userCardNavigator.css";
 import { Link } from 'react-router-dom';
 
 
 const userCardNavigator = () => {
+
+    useEffect(() => {
+        window.addEventListener('scroll', scrollHandler, true)
+    });
+    function scrollHandler() {
+        const scrollHeight = window.screenY
+        console.log(scrollHeight)
+    }
+    scrollHandler()
+
+
     return (
         <div className="userCardNavigator">
             <div className="userCardNavigator-left">

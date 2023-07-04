@@ -1,14 +1,20 @@
 import React from "react";
-import './userMessage.css'
+import './userMessage.css';
+
 
 export default function UserMessage({ bface, sface, nick, area, follow_num, fans_num, group_num, praise_num, digest_thread_num }) {
 
+    // const[height, setHeight] = useState(0);
+
+    // const reheightUpdate = (e) => {
+    //     let h =
+    // }
+
     return (
-        <div className="userMessage"
-            style={{ backgroundImage: `url(${bface})` }}>
+        <div className="userMessage">
             <div className="userMessage-area-sface-botton" >
                 <div className="userMessage-area-sface">
-                    <img src={sface} alt=''></img>
+                    <img src={'/image/penguin.gif'} alt=''></img>
                 </div>
                 <div className="userMessage-area-botton">
                     关注

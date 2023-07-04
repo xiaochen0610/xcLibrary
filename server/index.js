@@ -3,6 +3,7 @@ const fs = require('fs')
 const PORT = process.env.PORT || 3001;
 const PORT1 = process.env.PORT || 3002;
 const PORT2 = process.env.PORT || 3003;
+const PORT3 = process.env.PORT || 3004;
 
 
 
@@ -20,6 +21,7 @@ app.get("/", (req, res) => {
     res.jsonp(JSON.parse(data_zw));
 });
 //配置路由
+
 
 
 const commend = express();
@@ -46,3 +48,16 @@ const dataUserCard = fs.readFileSync('././data-userCard.json');
 userCard.get("/", (req, res) => {
     res.jsonp(JSON.parse(dataUserCard));
 });
+
+
+const userCardPage = express();
+
+userCardPage.listen(PORT3, () => {
+    console.log(`server listening on ${PORT3}`)
+})
+
+const dataUserCardPage = fs.readFileSync('././data-userCardPage.json');
+
+userCardPage.get("/", (req, res) => {
+    res.jsonp(JSON.parse(dataUserCardPage))
+})

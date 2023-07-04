@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "./userCard.css"
 import UserMessage from "./userMessage/userMessage";
 import UserCardNavigator from "./userCardNavigator/userCardNavigator";
 import requestUsercard from "./requestUserCard";
@@ -31,9 +32,13 @@ export default function userCard() {
         .catch((err) => {
             console.log(err);
         })
+
+
+
     return (
         <div className="userCard">
             <UserCardNavigator />
+            <img src={'/image/penguin.gif'} alt=''></img>
             <div className="userCardPage">
                 <UserMessage
                     bface={bface}

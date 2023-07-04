@@ -3,10 +3,6 @@
     flex-direction: column;
     height: 425px;
     width: auto;
-    background: no-repeat 100%;
-    background-position: center 0;
-    background-size: cover;
-    /* backdrop-filter: blur(2px); */
 }
 
 .userMessage-area {
@@ -31,7 +27,6 @@
 .userMessage-area-sface>img {
     height: 100px;
     width: 100px;
-    background-color: #bc5252;
     border-radius: 50px;
     margin-left: 15px;
 }
