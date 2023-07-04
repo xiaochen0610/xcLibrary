@@ -50,14 +50,14 @@ userCard.get("/", (req, res) => {
 });
 
 
-const userCardPage = express();
+const userCardPost = express();
 
-userCardPage.listen(PORT3, () => {
+userCardPost.listen(PORT3, () => {
     console.log(`server listening on ${PORT3}`)
 })
 
-const dataUserCardPage = fs.readFileSync('././data-userCardPage.json');
+const dataUserCardPost = fs.readFileSync('././data-userCardPost.json');
 
-userCardPage.get("/", (req, res) => {
-    res.jsonp(JSON.parse(dataUserCardPage))
+userCardPost.get("/", (req, res) => {
+    res.jsonp(JSON.parse(dataUserCardPost))
 })

@@ -42,7 +42,6 @@ export default function userCard() {
             <div className="userCardPage">
                 <UserMessage
                     bface={bface}
-                    sface={sface}
                     nick={nick}
                     area={area}
                     follow_num={follow_num}
@@ -51,7 +50,8 @@ export default function userCard() {
                     praise_num={praise_num}
                     digest_thread_num={digest_thread_num}
                 />
-                <UserCardPost />
+                <UserCardPost
+                    nick={nick} />
             </div>
 
         </div>

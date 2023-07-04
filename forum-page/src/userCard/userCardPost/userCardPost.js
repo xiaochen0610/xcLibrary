@@ -1,12 +1,13 @@
 import React from "react";
+import "./userCardPost.css"
 import Skeleton from "./skeleton/skeleton";
+import UserCardPostContent from "./userCardPostContent/userCardPostContent";
 
-export default function UserCardPost() {
+export default function UserCardPost({ nick }) {
     return (
         <div className="userCardPost">
-            <Skeleton />
-            <Skeleton />
-            <Skeleton />
+            <UserCardPostContent
+                nick={nick} />
             <Skeleton />
         </div>
     )
