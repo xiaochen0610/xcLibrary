@@ -1,11 +1,12 @@
 import React from "react";
+import './commendContent.css'
 
 export default function CommendContent({ subject, str, pic, num_view }) {
 
     return <div className="commend-content0">
         <div className="commend-content-title">
             <div className="commend-img">荐</div>
-            <div className="5t">
+            <div className="t5">
                 {subject}
             </div>
         </div>
