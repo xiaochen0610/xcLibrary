@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 export default function User({ sface, nick, num_view, dateline }) {
     return (
         <div className="user">
-            <Link className="user-img" to='/userCard'  >
+            <Link className="user-img" exact='ture' to='/userCard'  >
                 <img src={sface} alt="头像"></img>
             </Link>
             <div className="user0">
                 <div className="user1">
-                    <Link to='/userCard'  >
+                    <Link to='/userCard' exact='ture' >
                         <span className="nick">
                             {nick}
                         </span>

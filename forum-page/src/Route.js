@@ -7,8 +7,9 @@ import userCard from './userCard/userCard';
 export default function Routes() {
     return <Router>
         <Switch>
-            <Route path='/' exact component={forumPage} />
             <Route path='/userCard' component={userCard} />
+
+            <Route path='/forumPage' exact component={forumPage} />
         </Switch>
     </Router>
 };

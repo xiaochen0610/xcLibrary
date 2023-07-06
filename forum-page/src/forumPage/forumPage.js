@@ -23,19 +23,7 @@ export default function forumPage() {
   const [icon, setIcon] = useState(null);
   const [num_user_subscribe, setNum_user_subscribe] = useState(null);
   const [num_reply_yesterday, setNum_reply_yesterday] = useState(null);
-  const [subjectCommend1, setSubjectCommend1] = useState(null);
-  const [str1, setStr1] = useState(null);
-  const [pic1, setPic1] = useState(null);
-  const [num_viewCommend1, setNum_viewCommend1] = useState(null);
-  const [subjectCommend2, setSubjectCommend2] = useState(null);
-  const [str2, setStr2] = useState(null);
-  const [pic2, setPic2] = useState(null);
-  const [num_viewCommend2, setNum_viewCommend2] = useState(null);
-  const [subjectCommend3, setSubjectCommend3] = useState(null);
-  const [str3, setStr3] = useState(null);
-  const [pic3, setPic3] = useState(null);
-  const [num_viewCommend3, setNum_viewCommend3] = useState(null);
-
+  const [commends, setCommends] = useState(null);
 
 
   request
@@ -51,28 +39,19 @@ export default function forumPage() {
       setIcon(data.config.quan_info.icon);
       setNum_user_subscribe(data.config.quan_info.num_user_subscribe);
       setNum_reply_yesterday(data.config.quan_info.num_reply_yesterday);
-
     })
     .catch((err) => {
       console.log(err);
     })
 
   requestCommend.then((data) => {
-    setSubjectCommend1(data[0].thread.subject);
-    setStr1(data[0].thread.summary.str);
-    setPic1(data[0].thread.summary.video.pic);
-    setNum_viewCommend1(data[0].thread.num_view);
-    setSubjectCommend2(data[1].thread.subject);
-    setStr2(data[1].thread.summary.str);
-    setPic2(data[1].thread.summary.video.pic);
-    setNum_viewCommend2(data[1].thread.num_view);
-    setSubjectCommend3(data[2].thread.subject);
-    setStr3(data[2].thread.summary.str);
-    setPic3(data[2].thread.summary.video.pic);
-    setNum_viewCommend3(data[2].thread.num_view);
+    setTimeout(() => {
+      setCommends(data);
+    }, 1000);
   }).catch((err) => {
     console.log(err);
   })
+
 
   return (
     <div className="app">
@@ -93,18 +72,7 @@ export default function forumPage() {
           num_reply_yesterday={num_reply_yesterday}
         />
         <Commend
-          subject1={subjectCommend1}
-          str1={str1}
-          pic1={pic1}
-          num_view1={num_viewCommend1}
-          subject2={subjectCommend2}
-          str2={str2}
-          pic2={pic2}
-          num_view2={num_viewCommend2}
-          subject3={subjectCommend3}
-          str3={str3}
-          pic3={pic3}
-          num_view3={num_viewCommend3}
+          commends={commends}
         />
 
       </div>

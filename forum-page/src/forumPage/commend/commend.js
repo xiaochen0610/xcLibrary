@@ -3,27 +3,21 @@ import Skeleton from "./skeleton/skeleton";
 import './commend.css'
 import CommendContent from "./commendContent";
 
-export default function Commend({ subject1, str1, pic1, num_view1, subject2, str2, pic2, num_view2, subject3, str3, pic3, num_view3 }) {
-    if (subject1) {
+export default function Commend({ commends }) {
+    const commendsContent = commends == null ? null : commends.map((comm) => {
+        return <CommendContent
+            subject={comm.thread.subject}
+            str={comm.thread.summary.str}
+            pic={comm.thread.summary.pic}
+            num_view={comm.thread.num_view} />
+    });
+
+    if (commends != null) {
         return <div className="commend">
             <div className="commend-title">
                 <div>你的专属推荐</div>
             </div>
-            <CommendContent
-                subject={subject1}
-                str={str1}
-                pic={pic1}
-                num_view={num_view1} />
-            <CommendContent
-                subject={subject2}
-                str={str2}
-                pic={pic2}
-                num_view={num_view2} />
-            <CommendContent
-                subject={subject3}
-                str={str3}
-                pic={pic3}
-                num_view={num_view3} />
+            {commendsContent}
         </div>
     } else {
         return <div className="commend">

@@ -18,7 +18,7 @@ const userCardNavigator = () => {
     return (
         <div className="userCardNavigator">
             <div className="userCardNavigator-left">
-                <Link className='userCardNavigator-left-img' to='/'>
+                <Link className='userCardNavigator-left-img' to='/forumPage'>
                     <img src={"/image/back-white.png"} alt='' />
                 </Link>
             </div>
