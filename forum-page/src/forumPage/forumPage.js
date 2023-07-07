@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
 import ReactHtmlParser from "react-html-parser";
 import { useState } from 'react';
 import moment from 'moment';
@@ -25,33 +26,33 @@ export default function forumPage() {
   const [num_reply_yesterday, setNum_reply_yesterday] = useState(null);
   const [commends, setCommends] = useState(null);
 
-
-  request
-    .then((data) => {
-      setTitle(data.config.quan_info.title);
-      setSface(data.thread.user.sface);
-      setNick(data.thread.user.nick);
-      setNum_view(data.thread.num_view);
-      setDateline(moment(data.thread.dateline).format(`MM[-]DD`));
-      setSubject(data.thread.subject);
-      setMessage(ReactHtmlParser(data.thread.message));
-      setGoodNumber(data.thread.num_good);
-      setIcon(data.config.quan_info.icon);
-      setNum_user_subscribe(data.config.quan_info.num_user_subscribe);
-      setNum_reply_yesterday(data.config.quan_info.num_reply_yesterday);
-    })
-    .catch((err) => {
+  useEffect(() => {
+    request
+      .then((data) => {
+        setTitle(data.config.quan_info.title);
+        setSface(data.thread.user.sface);
+        setNick(data.thread.user.nick);
+        setNum_view(data.thread.num_view);
+        setDateline(moment(data.thread.dateline).format(`MM[-]DD`));
+        setSubject(data.thread.subject);
+        setMessage(ReactHtmlParser(data.thread.message));
+        setGoodNumber(data.thread.num_good);
+        setIcon(data.config.quan_info.icon);
+        setNum_user_subscribe(data.config.quan_info.num_user_subscribe);
+        setNum_reply_yesterday(data.config.quan_info.num_reply_yesterday);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+    requestCommend.then((data) => {
+      let timeout = setTimeout(() => {
+        setCommends(data);
+        clearTimeout(timeout);
+      }, 1000);
+    }).catch((err) => {
       console.log(err);
     })
-
-  requestCommend.then((data) => {
-    setTimeout(() => {
-      setCommends(data);
-    }, 1000);
-  }).catch((err) => {
-    console.log(err);
-  })
-
+  }, [])
 
   return (
     <div className="app">
