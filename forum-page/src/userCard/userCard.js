@@ -10,7 +10,6 @@ import UserCardNavigator from "./userCardNavigator/userCardNavigator";
 import UserCardPost from "./userCardPost/userCardPost";
 
 export default function userCard() {
-    const [sface, setSface] = useState("头像");
     const [nick, setNick] = useState("昵称");
     const [area, setArea] = useState("地区");
     const [follow_num, setFollow_num] = useState("");
@@ -19,18 +18,10 @@ export default function userCard() {
     const [praise_num, setPraise_num] = useState("");
     const [digest_thread_num, setDigest_thread_num] = useState("");
     const [bface, setBface] = useState("");
-    const [subject, setSubject] = useState("");
-    const [str, setStr] = useState("");
-    const [images, setImages] = useState("");
-    const [num_good, setNum_good] = useState("");
-    const [num_view, setNum_view] = useState("");
-    const [title, setTitle] = useState("");
-    const [num_reply, setNum_reply] = useState("");
-
+    const [userCardPosts, setUserCardPosts] = useState(null);
 
     requestUsercard
         .then((data) => {
-            setSface(data.sface);
             setNick(data.nick);
             setArea(data.area);
             setFollow_num(data.follow_num);
@@ -45,19 +36,13 @@ export default function userCard() {
         })
 
     requestUsercardPost.then((data) => {
-        setSubject(data[0].subject)
-        setStr(data[0].summary.str)
-        setImages(data[0].summary.images)
-        setNum_good(data[0].num_good)
-        setNum_view(data[0].num_view)
-        setTitle(data[0].quan_info.title)
-        setNum_reply(data[0].num_reply)
-
+        let timeout = setTimeout(() => {
+            setUserCardPosts(data);
+            clearTimeout(timeout);
+        }, 1000);
     }).catch((err) => {
         console.log(err);
     })
-
-
 
     return (
         <div className="userCard">
@@ -75,17 +60,8 @@ export default function userCard() {
                     digest_thread_num={digest_thread_num}
                 />
                 <UserCardPost
+                    userCardPosts={userCardPosts}
                     nick={nick}
-                    subject={subject}
-                    str={str}
-                    images={images}
-                    num_good={num_good}
-                    num_view={num_view}
-                    title={title}
-                    num_reply={num_reply}
-
-
-
                 />
             </div>
 

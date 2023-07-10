@@ -44,6 +44,7 @@ export default function forumPage() {
       .catch((err) => {
         console.log(err);
       })
+
     requestCommend.then((data) => {
       let timeout = setTimeout(() => {
         setCommends(data);

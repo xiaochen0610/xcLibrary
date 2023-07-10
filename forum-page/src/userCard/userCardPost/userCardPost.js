@@ -3,34 +3,24 @@ import "./userCardPost.css"
 import Skeleton from "./skeleton/skeleton";
 import UserCardPostContent from "./userCardPostContent/userCardPostContent";
 
-export default function UserCardPost({ nick, subject, str, images, num_good, num_view, title, num_reply }) {
+export default function UserCardPost({ nick, userCardPosts }) {
+    const cardPost = userCardPosts == null ? null : userCardPosts.map((post) => {
+        return <UserCardPostContent
+            nick={nick}
+            subject={post.subject}
+            str={post.summary.str}
+            images={post.summary.images}
+            num_good={post.num_good}
+            num_view={post.num_view}
+            title={post.quan_info.title}
+            num_reply={post.num_reply} />;
+    });
 
-    if (nick) {
+    if (userCardPosts != null) {
         return <div className="userCardPost">
-            <UserCardPostContent
-                nick={nick}
-                subject={subject}
-                str={str}
-                images={images}
-                num_good={num_good}
-                num_view={num_view}
-                title={title}
-                num_reply={num_reply}
-            /><UserCardPostContent
-                nick={nick}
-                subject={subject}
-                str={str}
-                images={images}
-                num_good={num_good}
-                num_view={num_view}
-                title={title}
-                num_reply={num_reply}
-            />
+            {cardPost}
         </div>
-
     } else {
         return <Skeleton />
-
     }
-
 }
