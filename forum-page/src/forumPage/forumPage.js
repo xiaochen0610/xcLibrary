@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
-
 import ReactHtmlParser from "react-html-parser";
 import { useState } from 'react';
 import moment from 'moment';
+
 import './forumPage.css';
-import request from './request'
-import requestCommend from './request-commend';
+
+import forumPageTask from './request'
+import forumPageCommendTask from './request-commend';
+
 import Navigator from './navigator/navigator';
 import User from './user/user';
 import Page from './page/page';
@@ -27,7 +29,7 @@ export default function forumPage() {
   const [commends, setCommends] = useState(null);
 
   useEffect(() => {
-    request
+    forumPageTask()
       .then((data) => {
         setTitle(data.config.quan_info.title);
         setSface(data.thread.user.sface);
@@ -45,7 +47,7 @@ export default function forumPage() {
         console.log(err);
       })
 
-    requestCommend.then((data) => {
+    forumPageCommendTask().then((data) => {
       let timeout = setTimeout(() => {
         setCommends(data);
         clearTimeout(timeout);

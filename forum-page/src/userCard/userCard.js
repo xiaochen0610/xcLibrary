@@ -2,12 +2,13 @@ import React from "react";
 import { useState } from "react";
 import "./userCard.css";
 
-import requestUsercard from "./requestUserCard";
-import requestUsercardPost from "./requestUserCardPost";
+import userCardTask from "./requestUserCard";
+import userCardPostTask from "./requestUserCardPost"
 
 import UserMessage from "./userMessage/userMessage";
 import UserCardNavigator from "./userCardNavigator/userCardNavigator";
 import UserCardPost from "./userCardPost/userCardPost";
+import { setTimeout } from "timers";
 
 export default function userCard() {
     const [nick, setNick] = useState("昵称");
@@ -20,7 +21,8 @@ export default function userCard() {
     const [bface, setBface] = useState("");
     const [userCardPosts, setUserCardPosts] = useState(null);
 
-    requestUsercard
+    console.log("page req");
+    userCardTask()
         .then((data) => {
             setNick(data.nick);
             setArea(data.area);
@@ -30,12 +32,11 @@ export default function userCard() {
             setPraise_num(data.praise_num);
             setDigest_thread_num(data.digest_thread_num);
             setBface(data.bface);
-        })
-        .catch((err) => {
+        }, (err) => {
             console.log(err);
-        })
+        });
 
-    requestUsercardPost.then((data) => {
+    userCardPostTask().then((data) => {
         let timeout = setTimeout(() => {
             setUserCardPosts(data);
             clearTimeout(timeout);
