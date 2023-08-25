@@ -4,7 +4,8 @@ const { ipcRenderer } = window.require('electron')
 
 function ChooseFile() {
     function openFile() {
-        ipcRenderer.send('openFileBrowser');
+        ipcRenderer.invoke('openFileBrowser');
+
         // ipcRenderer.on('getBuffer', (arg) => { FileReader.readAsArrayBuffer(arg) })
     }
 

@@ -121,7 +121,12 @@ X ArrayBuffer 通过 AudioContext.decodeAudioData() 方法 转换为AudioBuffer-
 X 
 
 
+### 结构
+editor-音频操作  
 
+bridge-链接editor和window window-视图
+
+window是渲染层控制
 
 
 
